@@ -2,4 +2,4 @@ language: node_js
 node_js:
 - '6'
 after_success:
-- surge --project .
+- ./node_modules/.bin/surge --project .
