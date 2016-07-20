@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/decaffeinate/decaffeinate-project.org/issues"
   },
-  "homepage": "https://github.com/decaffeinate/decaffeinate-project.org#readme",
+  "homepage": "http://decaffeinate-project.org/",
   "devDependencies": {
     "browserify": "^13.0.1",
     "decaffeinate": "^2.19.0",
