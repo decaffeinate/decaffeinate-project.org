@@ -1,0 +1,25 @@
+{
+  "name": "decaffeinate-project.org",
+  "description": "Website for the decaffeinate project.",
+  "scripts": {
+    "test": "echo \"No tests.\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decaffeinate/decaffeinate-project.org.git"
+  },
+  "keywords": [
+    "decaffeinate",
+    "coffee-script"
+  ],
+  "author": "Brian Donovan <me@brian-donovan.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/decaffeinate/decaffeinate-project.org/issues"
+  },
+  "homepage": "https://github.com/decaffeinate/decaffeinate-project.org#readme",
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "decaffeinate": "^2.19.0"
+  }
+}
