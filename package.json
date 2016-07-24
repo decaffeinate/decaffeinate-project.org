@@ -2,7 +2,8 @@
   "name": "decaffeinate-project.org",
   "description": "Website for the decaffeinate project.",
   "scripts": {
-    "test": "echo \"No tests.\""
+    "test": "echo \"No tests.\"",
+    "start": "python -m SimpleHTTPServer"
   },
   "repository": {
     "type": "git",
