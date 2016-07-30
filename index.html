@@ -1,124 +1,308 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>decaffeinate &mdash; CoffeeScript in, JSNext out.</title>
+    <meta charset="utf-8">
+    <title>decaffeinate &mdash; CoffeeScript in, JavaScript out.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
     <style>
-      body {
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-      }
-      .logo {
-        background: url(images/logo.png) no-repeat center;
-        background-size: auto 75px;
-        width: 100%;
-        height: 40%;
-      }
-      .demo {
+      html {
+        height: 100%;
+        box-sizing: border-box;
         background-color: black;
-        height: 60%;
       }
-      .tagline {
-        font-family: "Arial Narrow", sans-serif;
-        font-size: 24pt;
-        text-align: center;
-        width: 100%;
-        display: block;
+
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+
+      body {
         position: relative;
-        top: calc(50% + 24pt);
-        left: 60px;
-      }
-      .code {
+        margin: 0;
+        padding: 0 0 44px 0;
+        min-height: 100%;
+        font-family: Inconsolata, sans-serif;
         color: white;
-        font-family: "Menlo", monospace;
-        font-size: 25px;
-        text-align: left;
-        padding-top: 10%;
       }
-      .code-left {
-        padding-left: 20%;
+
+      a {
+        color: inherit;
       }
-      .code-right {
-        padding-right: 20%;
+
+      .nav-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 16px;
+        height: 44px;
       }
-      .code-container {
-        text-align: center;
-        width: 50%;
-        float: left;
+
+      .nav .nav-item {
+        display: inline-block;
+        height: 100%;
       }
-      .button {
-        padding: 5px 10px;
-        border: 1px solid black;
-        font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+      .nav-item .nav-link {
+        color: white;
         text-decoration: none;
       }
-      .button-repl-container {
-        position: relative;
-        top: calc(100% - 80px);
-        left: 48%;
+
+      header {
+        height: 44px;
       }
-    </style>
-    <style type="text/css">
-      <!--
-      pre { white-space: pre-wrap; font-family: monospace; color: #708280; background-color: #000000; }
-      body { font-family: monospace; }
-      * { font-size: 1em; }
-      .Constant { color: #d8fa3c; }
-      .Statement { color: #6b8652; }
-      .Type { color: #24a4a5; }
-      .Declaration { color: #f1de2e; }
-      .Identifier { color: #ce8a88; }
-      .This { color: #d17bcd; }
-      .Comment { color: #999; }
-      -->
+
+      .section-hero {
+        text-align: center;
+      }
+
+      .section-install {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .section-install .comment {
+        color: #666;
+      }
+
+      .section-try-it {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .button {
+        font-family: Inconsolata, sans-serif;
+        background: #fff linear-gradient(to bottom, #fff, #eee);
+        border-radius: 28px;
+        color: #333;
+        font-size: 20px;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+      }
+
+      footer {
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 44px;
+        line-height: 44px;
+      }
+
+      @media screen and (min-width: 768px) {
+        .nav-container .logo, .nav-container .nav {
+          margin: 1em;
+        }
+
+        .nav-container .logo {
+          float: left;
+        }
+
+        .nav-container .nav {
+          float: right;
+        }
+
+        .nav .nav-item {
+          margin-left: 1em;
+        }
+
+        .menu {
+          display: none;
+        }
+
+        .section-hero {
+          padding-top: 100px;
+        }
+
+        .section-hero .title {
+          font-size: 48px;
+        }
+
+        .section-install {
+          padding-top: 44px;
+          font-size: 20px;
+        }
+
+        .section-try-it {
+          padding-top: 80px;
+        }
+      }
+      
+      @media screen and (max-width: 767px) {
+        .nav {
+          pointer-events: none;
+          padding: 0;
+          opacity: 0;
+          width: 100%;
+          transition: opacity 250ms;
+          background-color: black;
+        }
+
+        .nav.open {
+          pointer-events: auto;
+          opacity: 0.9;
+        }
+
+        .nav .nav-item {
+          display: block;
+          width: 100%;
+          height: 36px;
+          line-height: 44px;
+          text-align: center;
+          position: relative;
+        }
+
+        .nav .nav-item a {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+
+        .nav-container .logo {
+          width: 100%;
+          text-align: center;
+          margin: 9px 0;
+        }
+
+        .menu {
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          width: 48px;
+        }
+
+        .menu .menu-line {
+          position: absolute;
+          width: 18px;
+          left: calc(50% - 9px);
+          height: 2px;
+          background-color: white;
+          border-radius: 1px;
+        }
+
+        .menu .menu-line:nth-of-type(1) {
+          top: calc(50% - 7px);
+        }
+
+        .menu .menu-line:nth-of-type(2) {
+          top: 50%;
+        }
+
+        .menu .menu-line:nth-of-type(3) {
+          top: calc(50% + 7px);
+        }
+
+        .section-hero .title {
+          font-size: 26px;
+        }
+
+        .section-install {
+          padding: 10px;
+          font-size: 16px;
+        }
+
+        .section-try-it {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="logo">
-      <span class="tagline">
-        CoffeeScript in, JSNext out.
-      </span>
-      <div class="button-repl-container">
-        <a class="button button-repl" href="./repl">
-          Try It
+    <header>
+      <nav class="nav-container">
+        <a href="#" class="menu">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
         </a>
-      </div>
-    </div>
-    <div class="demo">
-      <div class="code-container">
-        <pre class="demo-coffee code code-left">
-{ pow, sqrt } <span class="Statement">=</span> <span class="Type">Math</span>
-sq <span class="Statement">=</span> (x) <span class="Statement">=&gt;</span> pow(x, <span class="Constant">2</span>)
+        <div class="logo">
+          ☕️ decaffeinate
+        </div>
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/repl/" class="nav-link">REPL</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/decaffeinate/decaffeinate" class="nav-link">Code</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/decaffeinate/decaffeinate/issues" class="nav-link">Issues</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section-hero">
+      <h1 class="title">
+        Goodbye CoffeeScript,<br>
+        hello JavaScript!
+      </h1>
+    </section>
+    <section class="section-install">
+      <span class="comment">
+        # install locally&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+      </span>
+      $ npm install -g decaffeinate<br>
+      <br>
+      <span class="comment">
+        # convert a single file&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+      </span>
+      $ decaffeinate index.coffee&nbsp;&nbsp;<br>
+      <br>
+      <span class="comment">
+        # convert a whole project&nbsp;&nbsp;&nbsp;&nbsp;<br>
+      </span>
+      $ decaffeinate src/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+      <br>
+      <span class="comment">
+        # remove the .coffee files&nbsp;&nbsp;&nbsp;<br>
+      </span>
+      $ find . -name '*.coffee' \&nbsp;&nbsp;<br>
+      > -exec rm {} \;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+      <br>
+      <span class="comment">
+        # commit the result&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+      </span>
+      $ git add -A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+      $ git commit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+      <br>
+      <span class="comment">
+        # See the <a href="https://github.com/decaffeinate/decaffeinate/blob/master/docs/conversion-guide.md">conversion guide</a>&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        # for more information.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>
+    </section>
+    <section class="section-try-it">
+      <a href="http://decaffeinate-project.org/repl/" class="button">
+        Try it!
+      </a>
+    </section>
+    <footer>
+      &copy; Brian Donovan
+    </footer>
 
-<span class="Comment"># Represents a 2D point.</span>
-<span class="Declaration">class</span> <span class="Type">Point</span>
-  <span class="Identifier">constructor</span>: (<span class="This">@</span>x, <span class="This">@</span>y) <span class="Statement">-&gt;</span>
+    <script>
+      function toggleClass(element, className) {
+        var classAttributeValue = ' ' + element.className + ' ';
 
-  <span class="Identifier">distanceTo</span>: ({x, y}) <span class="Statement">-&gt;</span>
-    xd <span class="Statement">=</span> sq(x <span class="Statement">-</span> <span class="This">@</span>x)
-    yd <span class="Statement">=</span> sq(y <span class="Statement">-</span> <span class="This">@</span>y)
-    sqrt(xd <span class="Statement">+</span> yd)
-        </pre>
-      </div>
-      <div class="code-container">
-        <pre class="demo-js code code-right">
-<span class="Declaration">var</span> { pow, sqrt } <span class="Statement">=</span> <span class="Type">Math</span>;
-<span class="Declaration">var</span> sq <span class="Statement">=</span> (x) <span class="Type">=&gt;</span> pow(x, <span class="Constant">2</span>);
+        if (classAttributeValue.indexOf(' ' + className + ' ') < 0) {
+          classAttributeValue += className;
+        } else {
+          classAttributeValue = classAttributeValue.replace(' ' + className + ' ', '');
+        }
 
-<span class="Comment">// Represents a 2D point.</span>
-<span class="Declaration">class</span> <span class="Type">Point</span> {
-  <span class="Identifier">constructor</span>(x, y) {
-    <span class="This">this</span>.x <span class="Statement">=</span> x, <span class="This">this</span>.y <span class="Statement">=</span> y;
-  }
+        element.className = classAttributeValue.trim();
+      }
 
-  <span class="Identifier">distanceTo</span>({x, y}) {
-    <span class="Declaration">var</span> xd <span class="Statement">=</span> sq(x <span class="Statement">-</span> <span class="This">this</span>.x);
-    <span class="Declaration">var</span> yd <span class="Statement">=</span> sq(y <span class="Statement">-</span> <span class="This">this</span>.y);
-    <span class="Statement">return</span> sqrt(xd <span class="Statement">+</span> yd);
-  }
-}
-        </pre>
-      </div>
-    </div>
+      document.querySelector('.menu').addEventListener('click', function() {
+        toggleClass(document.querySelector('.nav'), 'open');
+      });
+    </script>
   </body>
 </html>
