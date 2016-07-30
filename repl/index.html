@@ -74,6 +74,20 @@ cubes = (math.cube num for num in list)
   <form class="form decaffeinate-repl-toolbar">
     <div class="pull-left">
       <div class="form-group">
+        <span class="decaffeinate-repl-stage-option">
+          Run to stage:
+          <select id="option-stage">
+            <option value="full">Full Decaffeinate</option>
+            <option value="coffeescript-parser">CoffeeScript parser</option>
+            <option value="coffee-lex">coffee-lex</option>
+            <option value="decaffeinate-parser">decaffeinate-parser</option>
+            <option value="NormalizeStage">NormalizeStage</option>
+            <option value="MainStage">MainStage</option>
+            <option value="AddVariableDeclarationsStage">AddVariableDeclarationsStage</option>
+            <option value="SemicolonsStage">SemicolonsStage</option>
+            <option value="EsnextStage">EsnextStage</option>
+          </select>
+        </span>
         <label for="option-evaluate">
           <input id="option-evaluate" type="checkbox"> Evaluate
         </label>
