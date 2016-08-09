@@ -2,6 +2,7 @@
 
 COMMIT=true
 FORCE=false
+DEPLOY=false
 
 while [ $# -gt 0 ]; do
   case $1 in
@@ -11,6 +12,10 @@ while [ $# -gt 0 ]; do
 
     --force|-f)
       FORCE=true
+      ;;
+
+    --deploy)
+      DEPLOY=true
       ;;
   esac
 
@@ -49,4 +54,8 @@ if hasChanges; then
   else
     echo "Not committing changes since --no-commit was given."
   fi
+fi
+
+if [ "${DEPLOY}" == true ]; then
+  surge --project .
 fi
