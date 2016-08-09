@@ -2366,3 +2366,5 @@ h1:target::before, .h1:target::before, h2:target::before, .h2:target::before, h3
 .decaffeinate-repl-console { right: 0; }
 
 .decaffeinate-repl-demo-code { display:none; }
+
+.decaffeinate-repl-stage-option { margin-right: 15px; }

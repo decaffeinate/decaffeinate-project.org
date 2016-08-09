@@ -112,10 +112,23 @@
     return {
       get: function () {
         return $element.is(":checked");
-      } ,
+      },
       set: function (value) {
         var setting = value !== 'false' && value !== false;
         $element.prop('checked', setting);
+      },
+      enumerable: true,
+      configurable: false
+    };
+  }
+
+  function $select($element){
+    return {
+      get: function () {
+        return $element.val();
+      },
+      set: function (value) {
+        $element.val(value);
       },
       enumerable: true,
       configurable: false
@@ -127,15 +140,18 @@
    */
   function Options () {
     var $evaluate = $('#option-evaluate');
+    var $stage = $('#option-stage');
 
     var options = {};
     Object.defineProperties(options, {
-      'evaluate': $checkbox($evaluate)
+      'evaluate': $checkbox($evaluate),
+      'stage': $select($stage)
     });
 
     // Merge in defaults
     var defaults = {
-      evaluate: true
+      evaluate: true,
+      stage: 'full'
     };
 
     _.assign(options, defaults);
@@ -149,7 +165,7 @@
   function REPL () {
     this.storage = new StorageService();
     var state = this.storage.get('replState') || {};
-    var parsedQuery = UriUtils.parseQuery()
+    var parsedQuery = UriUtils.parseQuery();
     if(parsedQuery && parsedQuery.code || state.code) {
       _.assign(state, UriUtils.parseQuery());
     } else {
@@ -208,8 +224,9 @@
     var code = this.getSource();
     this.clearOutput();
 
+    var runToStage = this.options.stage === 'full' ? null : this.options.stage;
     try {
-      transformed = decaffeinate.convert(code).code;
+      transformed = decaffeinate.convert(code, {runToStage: runToStage}).code;
     } catch (err) {
       if (decaffeinate.PatchError.detect(err)) {
         this.printError(decaffeinate.PatchError.prettyPrint(err));
