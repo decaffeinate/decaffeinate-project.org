@@ -2368,3 +2368,4 @@ h1:target::before, .h1:target::before, h2:target::before, .h2:target::before, h3
 .decaffeinate-repl-demo-code { display:none; }
 
 .decaffeinate-repl-stage-option { margin-right: 15px; }
+.decaffeinate-repl-stage-option select { color: #333; }
