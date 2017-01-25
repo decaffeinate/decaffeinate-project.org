@@ -20,7 +20,7 @@
   },
   "homepage": "http://decaffeinate-project.org/",
   "devDependencies": {
-    "browserify": "^13.3.0",
+    "browserify": "^14.0.0",
     "decaffeinate": "2.46.1",
     "surge": "^0.18.0"
   }
