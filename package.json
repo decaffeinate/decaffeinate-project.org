@@ -21,7 +21,7 @@
   "homepage": "http://decaffeinate-project.org/",
   "devDependencies": {
     "browserify": "^14.0.0",
-    "decaffeinate": "2.56.29",
+    "decaffeinate": "2.56.30",
     "surge": "^0.18.0"
   }
 }
