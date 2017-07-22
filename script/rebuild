@@ -42,7 +42,7 @@ VERSION=$(./script/latest-version decaffeinate)
 configureGithubRemote decaffeinate/decaffeinate-project.org
 
 # Build the browser version.
-browserify -e node_modules/decaffeinate/dist/decaffeinate.js -s decaffeinate -o scripts/decaffeinate.js
+browserify -e node_modules/decaffeinate/dist/index.js -s decaffeinate -o scripts/decaffeinate.js
 
 # Update the script in the gh-pages branch.
 perl -p -i -e "s/v\d+\.\d+\.\d+/v$VERSION/" repl/index.html
