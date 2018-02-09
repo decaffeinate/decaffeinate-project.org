@@ -1,3 +1,4 @@
-node_modules
-.gobble-build
+client-secret.json
 lib
+node_modules
+public
