@@ -2,14 +2,4 @@ language: node_js
 node_js:
 - '6'
 after_success:
-- "./script/rebuild --deploy"
-deploy:
-  provider: gcs
-  access_key_id: GOOG4WHK2WY2XOKFKJ7G
-  secret_access_key:
-    secure: xb1NSKdRgFOHj5aW+E2EFO/9dG6ettp73EagvIFSvJsZtQ3DtB6viIT3PtKPKpmxwROQ1ZE0wX9Pj9tKhDfzDod0UB82bqLOCNWQYOzvUZ9oZ4yR4HyZUZHK7xerwRF2/Lz/78EJzN0P+LUHnDoSWugkbZ3E0aflwhtrS4HcGfcuBTezNzaWvJXbtINBMTxWPSFqxRFwpl5vIKLbQszssO3WixKrYgW2rG3Foc2exPFHMYKP/IZqh+GqAh2kDG/8aIeI7FVOmStxCjmmUdB2erXgmYClLz/CRtkA0XimKMHhUjqehQ8K3ja7k/b2Bfxt3uD+btkACE8PbVWzwrchIgaYvlqNNS6XKSeWI1yPPZGF2ucd/P750OecsAYlAjyu04C4/PoTWhzP4T17TFZ1OBat4iKZ+aj1gYmQmi5WcGfAdSkTXPnUEft+FmNeK9X8HrdwHz1rbsY+9Qc7CUUZgZmAna0urb8C+xffYP8XWkY7vom55QR095t99FlD01113fkDX/J3aNOV/Hht/M462ABESxqs6gNKL1QSQ892Uya0ZbOccXOsMYOmp8TZSGjAcGjviyZEcWUpwvYMGV96rblY3k3YjX4ufWyV4iq4W24JNogeKbBWxIxqWpjvq7gUjp5Qlku/GxVNcVdDJHUqmE63TrIe8S1C0xx7kAbFl6w=
-  bucket: gcp.decaffeinate-project.org
-  on:
-    repo: decaffeinate/decaffeinate-project.org
-  skip_cleanup: true
-  acl: public-read
+- ./script/rebuild --deploy
