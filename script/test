@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+const code = 'a b';
+const bundle = require('../public/js/decaffeinate');
+const spinner = require('ora')().start(`Converting "${code}" with bundle`);
+const { strictEqual } = require('assert');
+
+try {
+  strictEqual(bundle.convert(code).code, 'a(b);');
+  spinner.succeed('Bundle works as expected');
+} catch (err) {
+  spinner.fail(err.message);
+  process.exit(1);
+}

@@ -1,0 +1,72 @@
+#!/usr/bin/env node
+
+const execFile = require('mz/child_process').execFile;
+const { createReadStream, createWriteStream } = require('fs');
+const makedir = require('make-dir');
+const replace = require('replacestream');
+const { dirname, join, relative } = require('path');
+const streamToPromise = require('stream-to-promise');
+const ora = require('ora');
+
+const VERSION = require('decaffeinate/package').version;
+const ROOT = join(__dirname, '..');
+const PUBLIC = join(ROOT, 'public');
+
+const spinner = ora('Building…').start();
+
+async function buildDecaffeinateScript() {
+  spinner.text = 'Building browser bundle';
+
+  await makedir(join(PUBLIC, 'js'));
+  await execFile(
+    'yarn',
+    [
+      'browserify',
+      '-r', 'decaffeinate',
+      '-s', 'decaffeinate',
+      '-o', join(PUBLIC, 'js/decaffeinate.js')
+    ]
+  );
+}
+
+function outputLocationForFile(path) {
+  return join(PUBLIC, relative(ROOT, path));
+}
+
+async function pipeFile(from, to = outputLocationForFile(from)) {
+  await copyFile(from, to, replace('$DECAFFEINATE_VERSION$', VERSION));
+}
+
+async function copyFile(from, to = outputLocationForFile(from), transform = null) {
+  spinner.text = `${relative(ROOT, from)} → ${relative(ROOT, to)}`;
+
+  await makedir(dirname(to));
+
+  let input = createReadStream(from);
+
+  if (transform) {
+    input = input.pipe(transform);
+  }
+
+  await streamToPromise(input.pipe(createWriteStream(to)));
+}
+
+async function build() {
+  await pipeFile(join(__dirname, '../index.html'));
+  await pipeFile(join(__dirname, '../repl.html'));
+  await pipeFile(join(__dirname, '../repl/index.html'));
+  await copyFile(join(__dirname, '../css/main.css'));
+  await copyFile(join(__dirname, '../images/logo.png'));
+  await copyFile(join(__dirname, '../js/docs.js'));
+  await copyFile(join(__dirname, '../js/repl.js'));
+  await buildDecaffeinateScript();
+}
+
+build()
+  .then(() => {
+    spinner.succeed(`Wrote to '${relative(ROOT, PUBLIC)}'`);
+  })
+  .catch(err => {
+    spinner.fail(`Build failed: ${err.message}`);
+    process.exit(1);
+  });
