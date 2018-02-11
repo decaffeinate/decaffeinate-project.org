@@ -52,7 +52,7 @@ if hasChanges; then
     git commit -av -m "Update decaffeinate.js."
 
     if [ "${DEPLOY}" == true ]; then
-      git push origin HEAD:gh-pages
+      git push -f origin HEAD:gh-pages
     fi
   else
     echo "Not committing changes since --no-commit was given."
