@@ -49,7 +49,8 @@ perl -p -i -e "s/v\d+\.\d+\.\d+/v$VERSION/" repl/index.html
 
 if hasChanges; then
   if [ ${COMMIT} == true ]; then
-    git commit -av -m "Update decaffeinate.js."
+    git add repl/index.html scripts/decaffeinate.js
+    git commit -m "chore(package): update decaffeinate.js to ${VERSION}"
 
     if [ "${DEPLOY}" == true ]; then
       git push -f origin HEAD:gh-pages
