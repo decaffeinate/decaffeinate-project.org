@@ -744,9 +744,9 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-coffee-lex@^8.0.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/coffee-lex/-/coffee-lex-8.1.0.tgz#dfdcb5d802403a23375bef6dd776462ca7f1d556"
+coffee-lex@^8.1.1:
+  version "8.1.1"
+  resolved "https://registry.npmjs.org/coffee-lex/-/coffee-lex-8.1.1.tgz#d00f4388351eda23ddff8df9d706267c9608c615"
 
 color-convert@^1.9.0:
   version "1.9.1"
@@ -877,23 +877,23 @@ debug@^3.0.1:
   dependencies:
     ms "2.0.0"
 
-decaffeinate-coffeescript@1.12.7-patch.1:
-  version "1.12.7-patch.1"
-  resolved "https://registry.yarnpkg.com/decaffeinate-coffeescript/-/decaffeinate-coffeescript-1.12.7-patch.1.tgz#e44b7a4b8bc91fccb8add06fa95dd309b30178cf"
+decaffeinate-coffeescript@1.12.7-patch.2:
+  version "1.12.7-patch.2"
+  resolved "https://registry.npmjs.org/decaffeinate-coffeescript/-/decaffeinate-coffeescript-1.12.7-patch.2.tgz#c0a453395e0194bcf0dce8d81dbf7170c5a1d578"
 
-decaffeinate-parser@^20.0.0:
-  version "20.0.0"
-  resolved "https://registry.yarnpkg.com/decaffeinate-parser/-/decaffeinate-parser-20.0.0.tgz#937a68099fb20696a71a764de8a85595b794ef44"
+decaffeinate-parser@^20.2.2:
+  version "20.2.2"
+  resolved "https://registry.npmjs.org/decaffeinate-parser/-/decaffeinate-parser-20.2.2.tgz#589d00e6694327b707c74b29dea17c9732aa696c"
   dependencies:
     babylon "^6.18.0"
-    coffee-lex "^8.0.0"
-    decaffeinate-coffeescript "1.12.7-patch.1"
+    coffee-lex "^8.1.1"
+    decaffeinate-coffeescript "1.12.7-patch.2"
     json-stable-stringify "^1.0.1"
     lines-and-columns "^1.1.6"
 
-decaffeinate@3.4.1:
-  version "3.4.1"
-  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-3.4.1.tgz#90870d18502f569f13e675d71d430f087675e832"
+decaffeinate@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-3.5.0.tgz#08fdd245989a68e0c7c731f460cb850e3387de7b"
   dependencies:
     add-variable-declarations "^3.1.0"
     ast-processor-babylon-config "^1.0.0"
@@ -901,9 +901,9 @@ decaffeinate@3.4.1:
     babel-plugin-transform-optional-chaining "^7.0.0-beta.3"
     babel-preset-es2015 "^7.0.0-beta.3"
     babylon "7.0.0-beta.34"
-    coffee-lex "^8.0.0"
-    decaffeinate-coffeescript "1.12.7-patch.1"
-    decaffeinate-parser "^20.0.0"
+    coffee-lex "^8.1.1"
+    decaffeinate-coffeescript "1.12.7-patch.2"
+    decaffeinate-parser "^20.2.2"
     detect-indent "^4.0.0"
     esnext "^3.2.0"
     lines-and-columns "^1.1.5"
