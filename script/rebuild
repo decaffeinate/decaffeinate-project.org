@@ -44,7 +44,7 @@ configureGithubRemote decaffeinate/decaffeinate-project.org
 # Build the browser version.
 browserify \
   --require decaffeinate \
-  --external graceful-fs \
+  --ignore mz \
   --standalone decaffeinate \
   --outfile scripts/decaffeinate.js
 
