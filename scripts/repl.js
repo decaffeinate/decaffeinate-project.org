@@ -139,17 +139,26 @@
    * Decaffeinate options for transpilation as used by the REPL
    */
   function Options () {
+    var $useCS2 = $('#option-use-cs2');
+    var $useJSModules = $('#option-use-js-modules');
+    var $loose = $('#option-loose');
     var $evaluate = $('#option-evaluate');
     var $stage = $('#option-stage');
 
     var options = {};
     Object.defineProperties(options, {
+      'useCS2': $checkbox($useCS2),
+      'useJSModules': $checkbox($useJSModules),
+      'loose': $checkbox($loose),
       'evaluate': $checkbox($evaluate),
       'stage': $select($stage)
     });
 
     // Merge in defaults
     var defaults = {
+      useCS2: false,
+      useJSModules: false,
+      loose: false,
       evaluate: true,
       stage: 'full'
     };
@@ -226,7 +235,12 @@
 
     var runToStage = this.options.stage === 'full' ? null : this.options.stage;
     try {
-      transformed = decaffeinate.convert(code, {runToStage: runToStage}).code;
+      transformed = decaffeinate.convert(code, {
+        runToStage: runToStage,
+        useCS2: this.options.useCS2,
+        useJSModules: this.options.useJSModules,
+        loose: this.options.loose
+      }).code;
     } catch (err) {
       if (decaffeinate.PatchError.detect(err)) {
         this.printError(decaffeinate.PatchError.prettyPrint(err));
