@@ -881,28 +881,28 @@ debug@^3.0.1:
   dependencies:
     ms "2.0.0"
 
-decaffeinate-coffeescript2@2.2.1-patch.3:
-  version "2.2.1-patch.3"
-  resolved "https://registry.npmjs.org/decaffeinate-coffeescript2/-/decaffeinate-coffeescript2-2.2.1-patch.3.tgz#1a1574340d98863d3ac9af690d53944dfc761254"
+decaffeinate-coffeescript2@2.2.1-patch.4:
+  version "2.2.1-patch.4"
+  resolved "https://registry.npmjs.org/decaffeinate-coffeescript2/-/decaffeinate-coffeescript2-2.2.1-patch.4.tgz#901e67350d985b4c7994f84b2325f72bf6a6a865"
 
 decaffeinate-coffeescript@1.12.7-patch.2:
   version "1.12.7-patch.2"
   resolved "https://registry.npmjs.org/decaffeinate-coffeescript/-/decaffeinate-coffeescript-1.12.7-patch.2.tgz#c0a453395e0194bcf0dce8d81dbf7170c5a1d578"
 
-decaffeinate-parser@^22.4.2:
-  version "22.4.2"
-  resolved "https://registry.npmjs.org/decaffeinate-parser/-/decaffeinate-parser-22.4.2.tgz#b789f04bdcfb17abecca7f0e2b803a35d77ba05d"
+decaffeinate-parser@^22.5.0:
+  version "22.5.0"
+  resolved "https://registry.npmjs.org/decaffeinate-parser/-/decaffeinate-parser-22.5.0.tgz#2b4fa0174f2fc32ed967be75e58f927153acf000"
   dependencies:
     babylon "^6.18.0"
     coffee-lex "^9.1.0"
     decaffeinate-coffeescript "1.12.7-patch.2"
-    decaffeinate-coffeescript2 "2.2.1-patch.3"
+    decaffeinate-coffeescript2 "2.2.1-patch.4"
     json-stable-stringify "^1.0.1"
     lines-and-columns "^1.1.6"
 
-decaffeinate@4.5.2:
-  version "4.5.2"
-  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-4.5.2.tgz#b882a18bc1aef315fa250060ca6e69aeca6cb1b7"
+decaffeinate@4.6.0:
+  version "4.6.0"
+  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-4.6.0.tgz#f82f8655d5fb9e75730d3ee99da20be1b7125638"
   dependencies:
     add-variable-declarations "^3.1.0"
     ast-processor-babylon-config "^1.0.0"
@@ -912,8 +912,8 @@ decaffeinate@4.5.2:
     babylon "7.0.0-beta.34"
     coffee-lex "^9.1.0"
     decaffeinate-coffeescript "1.12.7-patch.2"
-    decaffeinate-coffeescript2 "2.2.1-patch.3"
-    decaffeinate-parser "^22.4.2"
+    decaffeinate-coffeescript2 "2.2.1-patch.4"
+    decaffeinate-parser "^22.5.0"
     detect-indent "^4.0.0"
     esnext "^3.2.0"
     lines-and-columns "^1.1.5"
