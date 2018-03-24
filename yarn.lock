@@ -976,9 +976,9 @@ decaffeinate-parser@^22.5.1:
     json-stable-stringify "^1.0.1"
     lines-and-columns "^1.1.6"
 
-decaffeinate@4.8.5:
-  version "4.8.5"
-  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-4.8.5.tgz#5c76c8484d7e027982016a52bd8a1ae64e19301b"
+decaffeinate@4.8.6:
+  version "4.8.6"
+  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-4.8.6.tgz#e2c32e18e8e34b3f8173fcc5129976bfb375050e"
   dependencies:
     add-variable-declarations "^3.1.0"
     ast-processor-babylon-config "^1.0.0"

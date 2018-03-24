@@ -21,6 +21,6 @@
   "homepage": "https://decaffeinate-project.org/",
   "devDependencies": {
     "browserify": "^16.0.0",
-    "decaffeinate": "4.8.5"
+    "decaffeinate": "4.8.6"
   }
 }
