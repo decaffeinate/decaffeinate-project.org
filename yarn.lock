@@ -965,9 +965,9 @@ decaffeinate-coffeescript@1.12.7-patch.2:
   version "1.12.7-patch.2"
   resolved "https://registry.npmjs.org/decaffeinate-coffeescript/-/decaffeinate-coffeescript-1.12.7-patch.2.tgz#c0a453395e0194bcf0dce8d81dbf7170c5a1d578"
 
-decaffeinate-parser@^22.5.1:
-  version "22.5.1"
-  resolved "https://registry.npmjs.org/decaffeinate-parser/-/decaffeinate-parser-22.5.1.tgz#a6c294b1a97f14ed6631ba3e2d7341c210e104c7"
+decaffeinate-parser@^22.5.2:
+  version "22.5.2"
+  resolved "https://registry.npmjs.org/decaffeinate-parser/-/decaffeinate-parser-22.5.2.tgz#0d15d9a6e041829476be74861270d8ca93f747d4"
   dependencies:
     babylon "^6.18.0"
     coffee-lex "^9.1.0"
@@ -976,9 +976,9 @@ decaffeinate-parser@^22.5.1:
     json-stable-stringify "^1.0.1"
     lines-and-columns "^1.1.6"
 
-decaffeinate@4.8.6:
-  version "4.8.6"
-  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-4.8.6.tgz#e2c32e18e8e34b3f8173fcc5129976bfb375050e"
+decaffeinate@4.8.7:
+  version "4.8.7"
+  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-4.8.7.tgz#ae88f32c353df9c28cdcfa12f0d985ebaf868cf2"
   dependencies:
     add-variable-declarations "^3.1.0"
     ast-processor-babylon-config "^1.0.0"
@@ -989,7 +989,7 @@ decaffeinate@4.8.6:
     coffee-lex "^9.1.0"
     decaffeinate-coffeescript "1.12.7-patch.2"
     decaffeinate-coffeescript2 "2.2.1-patch.4"
-    decaffeinate-parser "^22.5.1"
+    decaffeinate-parser "^22.5.2"
     detect-indent "^4.0.0"
     esnext "^3.3.1"
     lines-and-columns "^1.1.5"
