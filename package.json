@@ -13,7 +13,7 @@
     "decaffeinate",
     "coffee-script"
   ],
-  "author": "Brian Donovan <me@brian-donovan.com>",
+  "author": "Brian Donovan",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/decaffeinate/decaffeinate-project.org/issues"
