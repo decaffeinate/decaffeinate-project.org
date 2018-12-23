@@ -45,6 +45,7 @@ configureGithubRemote decaffeinate/decaffeinate-project.org
 browserify \
   --require decaffeinate \
   --ignore mz \
+  --ignore @babel/generator \
   --standalone decaffeinate \
   --outfile scripts/decaffeinate.js
 
