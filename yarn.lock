@@ -34,6 +34,16 @@
     source-map "^0.5.0"
     trim-right "^1.0.1"
 
+"@babel/generator@^7.2.2":
+  version "7.3.2"
+  resolved "https://registry.npmjs.org/@babel/generator/-/generator-7.3.2.tgz#fff31a7b2f2f3dad23ef8e01be45b0d5c2fc0132"
+  dependencies:
+    "@babel/types" "^7.3.2"
+    jsesc "^2.5.1"
+    lodash "^4.17.10"
+    source-map "^0.5.0"
+    trim-right "^1.0.1"
+
 "@babel/helper-function-name@7.0.0-beta.42":
   version "7.0.0-beta.42"
   resolved "https://registry.npmjs.com/@babel/helper-function-name/-/helper-function-name-7.0.0-beta.42.tgz#b38b8f4f85168d1812c543dd700b5d549b0c4658"
@@ -94,6 +104,10 @@
   version "7.1.6"
   resolved "https://registry.npmjs.com/@babel/parser/-/parser-7.1.6.tgz#16e97aca1ec1062324a01c5a6a7d0df8dd189854"
 
+"@babel/parser@^7.2.3":
+  version "7.3.2"
+  resolved "https://registry.npmjs.org/@babel/parser/-/parser-7.3.2.tgz#95cdeddfc3992a6ca2a1315191c1679ca32c55cd"
+
 "@babel/template@7.0.0-beta.42":
   version "7.0.0-beta.42"
   resolved "https://registry.npmjs.com/@babel/template/-/template-7.0.0-beta.42.tgz#7186d4e70d44cdec975049ba0a73bdaf5cdee052"
@@ -140,6 +154,20 @@
     globals "^11.1.0"
     lodash "^4.17.10"
 
+"@babel/traverse@^7.2.3":
+  version "7.2.3"
+  resolved "https://registry.npmjs.org/@babel/traverse/-/traverse-7.2.3.tgz#7ff50cefa9c7c0bd2d81231fdac122f3957748d8"
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@babel/generator" "^7.2.2"
+    "@babel/helper-function-name" "^7.1.0"
+    "@babel/helper-split-export-declaration" "^7.0.0"
+    "@babel/parser" "^7.2.3"
+    "@babel/types" "^7.2.2"
+    debug "^4.1.0"
+    globals "^11.1.0"
+    lodash "^4.17.10"
+
 "@babel/types@7.0.0-beta.42", "@babel/types@^7.0.0-beta.42":
   version "7.0.0-beta.42"
   resolved "https://registry.npmjs.com/@babel/types/-/types-7.0.0-beta.42.tgz#1e2118767684880f6963801b272fd2b3348efacc"
@@ -151,6 +179,14 @@
 "@babel/types@^7.0.0", "@babel/types@^7.1.2", "@babel/types@^7.1.6":
   version "7.1.6"
   resolved "https://registry.npmjs.com/@babel/types/-/types-7.1.6.tgz#0adb330c3a281348a190263aceb540e10f04bcce"
+  dependencies:
+    esutils "^2.0.2"
+    lodash "^4.17.10"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@^7.2.2", "@babel/types@^7.3.2":
+  version "7.3.2"
+  resolved "https://registry.npmjs.org/@babel/types/-/types-7.3.2.tgz#424f5be4be633fff33fb83ab8d67e4a8290f5a2f"
   dependencies:
     esutils "^2.0.2"
     lodash "^4.17.10"
@@ -252,12 +288,12 @@ astw@^2.0.0:
   dependencies:
     acorn "^4.0.3"
 
-automatic-semicolon-insertion@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npmjs.com/automatic-semicolon-insertion/-/automatic-semicolon-insertion-2.0.1.tgz#7509be7b3f90ee599bb24e7f7f2eb6919063c37e"
+automatic-semicolon-insertion@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmjs.org/automatic-semicolon-insertion/-/automatic-semicolon-insertion-2.0.2.tgz#ee8b659948fa6d5cb9c6dacaed61d159786bf2c2"
   dependencies:
-    "@babel/traverse" "^7.1.6"
-    "@babel/types" "^7.1.6"
+    "@babel/traverse" "^7.2.3"
+    "@babel/types" "^7.3.2"
 
 babylon@7.0.0-beta.42, babylon@^7.0.0-beta.42:
   version "7.0.0-beta.42"
@@ -590,13 +626,13 @@ decaffeinate-parser@^22.5.6:
     json-stable-stringify "^1.0.1"
     lines-and-columns "^1.1.6"
 
-decaffeinate@5.1.4:
-  version "5.1.4"
-  resolved "https://registry.npmjs.com/decaffeinate/-/decaffeinate-5.1.4.tgz#84eb00e232d4a18425c9c95cb18f702dc69c149d"
+decaffeinate@5.1.5:
+  version "5.1.5"
+  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-5.1.5.tgz#591eb2642ae1b090e8a48bf926241be47f0eb34a"
   dependencies:
     "@babel/parser" "^7.1.6"
     add-variable-declarations "^4.0.0"
-    automatic-semicolon-insertion "^2.0.1"
+    automatic-semicolon-insertion "^2.0.2"
     coffee-lex "^9.1.3"
     decaffeinate-coffeescript "1.12.7-patch.2"
     decaffeinate-coffeescript2 "2.2.1-patch.4"
