@@ -611,6 +611,10 @@ decaffeinate-coffeescript2@2.2.1-patch.4:
   version "2.2.1-patch.4"
   resolved "https://registry.npmjs.com/decaffeinate-coffeescript2/-/decaffeinate-coffeescript2-2.2.1-patch.4.tgz#901e67350d985b4c7994f84b2325f72bf6a6a865"
 
+decaffeinate-coffeescript2@2.2.1-patch.5:
+  version "2.2.1-patch.5"
+  resolved "https://registry.npmjs.org/decaffeinate-coffeescript2/-/decaffeinate-coffeescript2-2.2.1-patch.5.tgz#016ff1e967812d42bbfe270faa63b77681d2d7df"
+
 decaffeinate-coffeescript@1.12.7-patch.2:
   version "1.12.7-patch.2"
   resolved "https://registry.npmjs.com/decaffeinate-coffeescript/-/decaffeinate-coffeescript-1.12.7-patch.2.tgz#c0a453395e0194bcf0dce8d81dbf7170c5a1d578"
@@ -630,16 +634,16 @@ decaffeinate-parser@^22.5.6:
     json-stable-stringify "^1.0.1"
     lines-and-columns "^1.1.6"
 
-decaffeinate@5.1.6:
-  version "5.1.6"
-  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-5.1.6.tgz#27e593e6d76bbb0ce358349ac20a76dc28c881d7"
+decaffeinate@5.1.7:
+  version "5.1.7"
+  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-5.1.7.tgz#330edd125beb1aa8fd5a05a9500e5c55710d1f1f"
   dependencies:
     "@babel/parser" "^7.1.6"
     add-variable-declarations "^4.0.0"
     automatic-semicolon-insertion "^2.0.2"
     coffee-lex "^9.1.3"
     decaffeinate-coffeescript "1.12.7-patch.3"
-    decaffeinate-coffeescript2 "2.2.1-patch.4"
+    decaffeinate-coffeescript2 "2.2.1-patch.5"
     decaffeinate-parser "^22.5.6"
     detect-indent "^4.0.0"
     esnext "^3.3.1"
