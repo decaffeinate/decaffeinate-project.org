@@ -236,9 +236,9 @@ acorn@^5.2.1, acorn@^5.4.1:
   version "5.4.1"
   resolved "https://registry.npmjs.com/acorn/-/acorn-5.4.1.tgz#fdc58d9d17f4a4e98d102ded826a9b9759125102"
 
-add-variable-declarations@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npmjs.com/add-variable-declarations/-/add-variable-declarations-4.0.0.tgz#1715147801f4bc641bb1781cd2653a94b565e618"
+add-variable-declarations@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.npmjs.org/add-variable-declarations/-/add-variable-declarations-4.0.2.tgz#6373f51ab0f69154823b1e4042a9330934f54743"
   dependencies:
     "@babel/parser" "^7.1.6"
     "@babel/traverse" "^7.1.6"
@@ -625,12 +625,12 @@ decaffeinate-parser@^22.5.11:
     decaffeinate-coffeescript2 "2.2.1-patch.5"
     lines-and-columns "^1.1.6"
 
-decaffeinate@5.1.10:
-  version "5.1.10"
-  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-5.1.10.tgz#586e5f4b602d8918ccaa6ee598b84b876d468079"
+decaffeinate@5.1.11:
+  version "5.1.11"
+  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-5.1.11.tgz#04fa80ef1e95c8e1524a1f93a621ec816487feb6"
   dependencies:
     "@babel/parser" "^7.1.6"
-    add-variable-declarations "^4.0.0"
+    add-variable-declarations "^4.0.2"
     automatic-semicolon-insertion "^2.0.2"
     coffee-lex "^9.1.3"
     decaffeinate-coffeescript "1.12.7-patch.3"
