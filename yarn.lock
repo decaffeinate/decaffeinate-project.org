@@ -625,9 +625,9 @@ decaffeinate-parser@^22.5.11:
     decaffeinate-coffeescript2 "2.2.1-patch.5"
     lines-and-columns "^1.1.6"
 
-decaffeinate@5.1.11:
-  version "5.1.11"
-  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-5.1.11.tgz#04fa80ef1e95c8e1524a1f93a621ec816487feb6"
+decaffeinate@5.1.12:
+  version "5.1.12"
+  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-5.1.12.tgz#e2e1a97cf420d6d138654da34f72e8d2bb95a530"
   dependencies:
     "@babel/parser" "^7.1.6"
     add-variable-declarations "^4.0.2"
