@@ -52,7 +52,7 @@ browserify \
   --standalone decaffeinate \
   --outfile scripts/decaffeinate.js
 
-# Update the script in the gh-pages branch.
+# Update the script & version.
 perl -p -i -e "s/v\d+\.\d+\.\d+/v${VERSION}/" repl/index.html
 
 if hasChanges; then
@@ -62,8 +62,8 @@ if hasChanges; then
     git commit -m "chore(package): update decaffeinate.js to ${VERSION}"
 
     if [ "${DEPLOY}" == true ]; then
-      echo "Pushing to gh-pages…"
-      git push -f origin HEAD:gh-pages
+      echo "Pushing to origin…"
+      git push -f origin HEAD:master
     fi
   else
     echo "Not committing changes since --no-commit was given."
