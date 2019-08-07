@@ -46,6 +46,7 @@ browserify \
   --require decaffeinate \
   --ignore mz \
   --ignore @babel/generator \
+  --ignore prettier \
   --standalone decaffeinate \
   --outfile scripts/decaffeinate.js
 
