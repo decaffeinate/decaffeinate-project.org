@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 COMMIT=true
 FORCE=false
 DEPLOY=false
@@ -22,13 +24,13 @@ while [ $# -gt 0 ]; do
   shift
 done
 
-if [ "${FORCE}" == false ]; then
-  if [ "${TRAVIS_PULL_REQUEST}" != false ]; then
+if [ "${FORCE:-}" == false ]; then
+  if [ "${TRAVIS_PULL_REQUEST:-}" != false ]; then
     echo "Refusing to update website on PR build (use --force to override)."
     exit 0
   fi
 
-  if [ "${TRAVIS_BRANCH}" != master ]; then
+  if [ "${TRAVIS_BRANCH:-}" != master ]; then
     echo "Refusing to update website on non-master build (use --force to override)."
     exit 0
   fi
@@ -51,7 +53,7 @@ browserify \
   --outfile scripts/decaffeinate.js
 
 # Update the script in the gh-pages branch.
-perl -p -i -e "s/v\d+\.\d+\.\d+/v$VERSION/" repl/index.html
+perl -p -i -e "s/v\d+\.\d+\.\d+/v${VERSION}/" repl/index.html
 
 if hasChanges; then
   if [ ${COMMIT} == true ]; then
