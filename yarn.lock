@@ -486,10 +486,10 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-coffee-lex@^9.1.4:
-  version "9.1.4"
-  resolved "https://registry.npmjs.org/coffee-lex/-/coffee-lex-9.1.4.tgz#148eb42963000a26f4136f7e3cbf2b018484cb8f"
-  integrity sha512-iNmef/3aLgXYEVaSWPFmZRr5Ydw9+bIJKe6Xgc68mN9ElfwJWzCoHbRboZV0b8is//MI+yxrBjzst3oqlC/NyQ==
+coffee-lex@^9.1.5:
+  version "9.1.5"
+  resolved "https://registry.npmjs.org/coffee-lex/-/coffee-lex-9.1.5.tgz#6f46f33df539de3c00831d47bbe115991336aa4e"
+  integrity sha512-94lUMjs1vhlV86vnbCCnnIYzR4oszuO4qJzKUuKOLidiksh/UyQFOzPusjmLJt6vy5CNB0d/KtaceqV84zr46g==
 
 color-convert@^1.9.0:
   version "1.9.1"
@@ -625,21 +625,21 @@ decaffeinate-coffeescript@1.12.7-patch.3:
   version "1.12.7-patch.3"
   resolved "https://registry.npmjs.org/decaffeinate-coffeescript/-/decaffeinate-coffeescript-1.12.7-patch.3.tgz#ae261022a35dc42dd9a0bc2c241717d5a23f8e67"
 
-decaffeinate-parser@^22.5.12:
-  version "22.5.12"
-  resolved "https://registry.npmjs.org/decaffeinate-parser/-/decaffeinate-parser-22.5.12.tgz#dc9e709894227b2af33e2e23ec2d79d6978df6e3"
-  integrity sha512-uGO8AY16MlaY79ezbb5DBcP5wFvtDSJyOatrSFT5iAinQtqZH308B3+7qxD6vOxLGERde+pmPxkTsRokKYQNdg==
+decaffeinate-parser@^22.5.13:
+  version "22.5.13"
+  resolved "https://registry.npmjs.org/decaffeinate-parser/-/decaffeinate-parser-22.5.13.tgz#dda097e4995f291175bde16aa53535086c9bd06b"
+  integrity sha512-VbcRCEu1gfjI4PaN0hj9PaEylklkcrJU7R+NsGLm4BD4kV0VoXgoC4kNzjeMhaAn0a90Xs7YVemmjd8AE6vHZA==
   dependencies:
     "@babel/parser" "^7.1.6"
-    coffee-lex "^9.1.4"
+    coffee-lex "^9.1.5"
     decaffeinate-coffeescript "1.12.7-patch.3"
     decaffeinate-coffeescript2 "2.2.1-patch.5"
     lines-and-columns "^1.1.6"
 
-decaffeinate@6.0.5:
-  version "6.0.5"
-  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-6.0.5.tgz#3406813d3542f40b9a0d012b06f2806243ae3bfd"
-  integrity sha512-fXw5rBV7GbLiarRb0hkq6U8DLPN9++CJ7JeawCHFdgWmXCKSgz6QdKwvyy8eRb8vDmoZVjewL21gjx6h6DhN9Q==
+decaffeinate@6.0.6:
+  version "6.0.6"
+  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-6.0.6.tgz#76df74b0243ac07af3421f09cb75983f7c624d87"
+  integrity sha512-9iApAr1aduALy3++RlXURFVRgrzaK7c5S/VOk/CEE3AlJR365ZJU1rOwCI+G4QbIA0Xnacw99DY1zlIXPTKLyQ==
   dependencies:
     "@codemod/core" "^1.0.0"
     "@codemod/parser" "^1.0.0"
@@ -652,10 +652,10 @@ decaffeinate@6.0.5:
     "@resugar/codemod-strings-template" "^1.0.1"
     add-variable-declarations "^4.0.6"
     automatic-semicolon-insertion "^2.0.4"
-    coffee-lex "^9.1.4"
+    coffee-lex "^9.1.5"
     decaffeinate-coffeescript "1.12.7-patch.3"
     decaffeinate-coffeescript2 "2.2.1-patch.5"
-    decaffeinate-parser "^22.5.12"
+    decaffeinate-parser "^22.5.13"
     detect-indent "^4.0.0"
     lines-and-columns "^1.1.6"
     magic-string "^0.25.1"
