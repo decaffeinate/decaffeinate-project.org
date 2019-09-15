@@ -30,7 +30,7 @@ workflows:
   version: 2
   publish:
     jobs:
-      - deploy:
+      - publish:
           filters:
             branches:
               only: master
