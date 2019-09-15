@@ -3,17 +3,12 @@
 set -euo pipefail
 
 COMMIT=true
-FORCE=false
 DEPLOY=false
 
 while [ $# -gt 0 ]; do
   case $1 in
     --no-commit)
       COMMIT=false
-      ;;
-
-    --force|-f)
-      FORCE=true
       ;;
 
     --deploy)
@@ -23,18 +18,6 @@ while [ $# -gt 0 ]; do
 
   shift
 done
-
-if [ "${FORCE:-}" == false ]; then
-  if [ "${TRAVIS_PULL_REQUEST:-}" != false ]; then
-    echo "Refusing to update website on PR build (use --force to override)."
-    exit 0
-  fi
-
-  if [ "${TRAVIS_BRANCH:-}" != master ]; then
-    echo "Refusing to update website on non-master build (use --force to override)."
-    exit 0
-  fi
-fi
 
 source $(dirname $0)/helpers.sh
 
