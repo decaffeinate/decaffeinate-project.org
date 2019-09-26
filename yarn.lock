@@ -46,6 +46,16 @@
     source-map "^0.5.0"
     trim-right "^1.0.1"
 
+"@babel/generator@^7.6.2":
+  version "7.6.2"
+  resolved "https://registry.npmjs.org/@babel/generator/-/generator-7.6.2.tgz#dac8a3c2df118334c2a29ff3446da1636a8f8c03"
+  integrity sha512-j8iHaIW4gGPnViaIHI7e9t/Hl8qLjERI6DcV9kEpAIDJsAOrcnXqRS7t+QbhL76pwbtqP+QCQLL0z1CyVmtjjQ==
+  dependencies:
+    "@babel/types" "^7.6.0"
+    jsesc "^2.5.1"
+    lodash "^4.17.13"
+    source-map "^0.5.0"
+
 "@babel/helper-function-name@^7.1.0":
   version "7.1.0"
   resolved "https://registry.npmjs.com/@babel/helper-function-name/-/helper-function-name-7.1.0.tgz#a0ceb01685f73355d4360c1247f582bfafc8ff53"
@@ -93,6 +103,11 @@
   resolved "https://registry.npmjs.org/@babel/parser/-/parser-7.5.5.tgz#02f077ac8817d3df4a832ef59de67565e71cca4b"
   integrity sha512-E5BN68cqR7dhKan1SfqgPGhQ178bkVKpXTPEXnFJBrEt8/DKRZlybmy+IgYLTeN7tp1R5Ccmbm2rBk17sHYU3g==
 
+"@babel/parser@^7.6.2":
+  version "7.6.2"
+  resolved "https://registry.npmjs.org/@babel/parser/-/parser-7.6.2.tgz#205e9c95e16ba3b8b96090677a67c9d6075b70a1"
+  integrity sha512-mdFqWrSPCmikBoaBYMuBulzTIKuXVPtEISFbRRVNwMWpCms/hmE2kRq0bblUHaNRKrjRlmVbx1sDHmjmRgD2Xg==
+
 "@babel/template@^7.1.0":
   version "7.1.2"
   resolved "https://registry.npmjs.com/@babel/template/-/template-7.1.2.tgz#090484a574fef5a2d2d7726a674eceda5c5b5644"
@@ -125,6 +140,21 @@
     globals "^11.1.0"
     lodash "^4.17.13"
 
+"@babel/traverse@^7.6.2":
+  version "7.6.2"
+  resolved "https://registry.npmjs.org/@babel/traverse/-/traverse-7.6.2.tgz#b0e2bfd401d339ce0e6c05690206d1e11502ce2c"
+  integrity sha512-8fRE76xNwNttVEF2TwxJDGBLWthUkHWSldmfuBzVRmEDWOtu4XdINTgN7TDWzuLg4bbeIMLvfMFD9we5YcWkRQ==
+  dependencies:
+    "@babel/code-frame" "^7.5.5"
+    "@babel/generator" "^7.6.2"
+    "@babel/helper-function-name" "^7.1.0"
+    "@babel/helper-split-export-declaration" "^7.4.4"
+    "@babel/parser" "^7.6.2"
+    "@babel/types" "^7.6.0"
+    debug "^4.1.0"
+    globals "^11.1.0"
+    lodash "^4.17.13"
+
 "@babel/types@^7.0.0", "@babel/types@^7.1.2":
   version "7.1.6"
   resolved "https://registry.npmjs.com/@babel/types/-/types-7.1.6.tgz#0adb330c3a281348a190263aceb540e10f04bcce"
@@ -137,6 +167,15 @@
   version "7.5.5"
   resolved "https://registry.npmjs.org/@babel/types/-/types-7.5.5.tgz#97b9f728e182785909aa4ab56264f090a028d18a"
   integrity sha512-s63F9nJioLqOlW3UkyMd+BYhXt44YuaFm/VV0VwuteqjYwRrObkU7ra9pY4wAJR3oXi8hJrMcrcJdO/HH33vtw==
+  dependencies:
+    esutils "^2.0.2"
+    lodash "^4.17.13"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@^7.6.0", "@babel/types@^7.6.1":
+  version "7.6.1"
+  resolved "https://registry.npmjs.org/@babel/types/-/types-7.6.1.tgz#53abf3308add3ac2a2884d539151c57c4b3ac648"
+  integrity sha512-X7gdiuaCmA0uRjCmRtYJNAVCc/q+5xSgsfKJHqMN4iNLILX39677fJE1O40arPMh0TTtS9ItH67yre6c7k6t0g==
   dependencies:
     esutils "^2.0.2"
     lodash "^4.17.13"
@@ -298,13 +337,13 @@ astw@^2.0.0:
   dependencies:
     acorn "^4.0.3"
 
-automatic-semicolon-insertion@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/automatic-semicolon-insertion/-/automatic-semicolon-insertion-2.0.4.tgz#d11cb7044c315f99ca8b61a3d72c88f7431452ea"
-  integrity sha512-dV8DBTJ7dAmnRpZcbPwbwW+2ul/iCrutSq5NkNcZ84dPoj8o1KhY5HhiqtRg1eZjpv2GxJU5DzTcgVHE03ILHA==
+automatic-semicolon-insertion@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.npmjs.org/automatic-semicolon-insertion/-/automatic-semicolon-insertion-2.0.5.tgz#fae0971ed6f23e56509e89a291ac4626f68e4ea0"
+  integrity sha512-Yc6fVfkml05RULHcGRJcYPdrthGpdTmNirFG6HhkCs7yWFEzYc5wtHhpnz9oMSTLwm/g/XmSsIf2HKkTq+jnng==
   dependencies:
-    "@babel/traverse" "^7.5.5"
-    "@babel/types" "^7.5.5"
+    "@babel/traverse" "^7.6.2"
+    "@babel/types" "^7.6.1"
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -636,10 +675,10 @@ decaffeinate-parser@^22.5.13:
     decaffeinate-coffeescript2 "2.2.1-patch.5"
     lines-and-columns "^1.1.6"
 
-decaffeinate@6.0.8:
-  version "6.0.8"
-  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-6.0.8.tgz#b5ca74da60ca85c605c16b8a598efb2a5d06d915"
-  integrity sha512-T+PV6WOg+0uZ4F4tFvUIEvSBqgoAI1m7hnYdd7lUix26jAH83gLifbhkkd+L25FQTYbumg2T8F+bVFq7HIDQJw==
+decaffeinate@6.0.9:
+  version "6.0.9"
+  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-6.0.9.tgz#9f31af60838bd2b995a4507ebe78d1031cafec0f"
+  integrity sha512-UZn5jw2NMlHPghZiPzw+SF7+50IYOBQMI7vf5599a0Jrt1zQcy20yQpi0ZADAZ00olWb/b4HUjmTs+OkTF3t/g==
   dependencies:
     "@codemod/core" "^1.0.0"
     "@codemod/parser" "^1.0.0"
@@ -651,7 +690,7 @@ decaffeinate@6.0.8:
     "@resugar/codemod-objects-shorthand" "^1.0.1"
     "@resugar/codemod-strings-template" "^1.0.1"
     add-variable-declarations "^4.0.6"
-    automatic-semicolon-insertion "^2.0.4"
+    automatic-semicolon-insertion "^2.0.5"
     coffee-lex "^9.1.5"
     decaffeinate-coffeescript "1.12.7-patch.3"
     decaffeinate-coffeescript2 "2.2.1-patch.5"
