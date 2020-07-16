@@ -775,10 +775,10 @@ decaffeinate-parser@^22.5.13:
     decaffeinate-coffeescript2 "2.2.1-patch.5"
     lines-and-columns "^1.1.6"
 
-decaffeinate@6.0.10:
-  version "6.0.10"
-  resolved "https://registry.yarnpkg.com/decaffeinate/-/decaffeinate-6.0.10.tgz#268ac4c12a84bf05c7e1f3fff959c366d5abac4c"
-  integrity sha512-QiPrTcNo836ZhIPWoGBIoie5Z3PgEAFIMVfrXhSMjgV3dz6VHpLcRxELj8vXeFDv3mR8FjSItTh/POprk1iCEA==
+decaffeinate@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-6.1.0.tgz#3ebec787af84f024b5cfd97488436bb9eab83e9e"
+  integrity sha512-dMfITmVe7nZIZY2ukEQrVOoN87LF7bAOhUCry0KWmEhgGWHWN2VYS0yPVxc2y0GVdwrvXaEoR55tE0723r+NxQ==
   dependencies:
     "@codemod/core" "^1.0.7"
     "@codemod/parser" "^1.0.7"
@@ -799,7 +799,7 @@ decaffeinate@6.0.10:
     lines-and-columns "^1.1.6"
     magic-string "^0.25.1"
     mz "^2.7.0"
-    tslib "^1.9.3"
+    tslib "^2.0.0"
 
 defined@^1.0.0:
   version "1.0.0"
@@ -1489,9 +1489,10 @@ to-fast-properties@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
 
-tslib@^1.9.3:
-  version "1.9.3"
-  resolved "https://registry.npmjs.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
+tslib@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/tslib/-/tslib-2.0.0.tgz#18d13fc2dce04051e20f074cc8387fd8089ce4f3"
+  integrity sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
 
 tty-browserify@0.0.1:
   version "0.0.1"
