@@ -142,6 +142,7 @@
     var $useCS2 = $('#option-use-cs2');
     var $useJSModules = $('#option-use-js-modules');
     var $loose = $('#option-loose');
+    var $optionalChaining = $('#option-optional-chaining');
     var $evaluate = $('#option-evaluate');
     var $stage = $('#option-stage');
 
@@ -150,6 +151,7 @@
       'useCS2': $checkbox($useCS2),
       'useJSModules': $checkbox($useJSModules),
       'loose': $checkbox($loose),
+      'optionalChaining': $checkbox($optionalChaining),
       'evaluate': $checkbox($evaluate),
       'stage': $select($stage)
     });
@@ -159,6 +161,7 @@
       useCS2: false,
       useJSModules: false,
       loose: false,
+      optionalChaining: false,
       evaluate: true,
       stage: 'full'
     };
@@ -239,7 +242,8 @@
         runToStage: runToStage,
         useCS2: this.options.useCS2,
         useJSModules: this.options.useJSModules,
-        loose: this.options.loose
+        loose: this.options.loose,
+        optionalChaining: this.options.optionalChaining
       }).code;
     } catch (err) {
       if (decaffeinate.PatchError.detect(err)) {
