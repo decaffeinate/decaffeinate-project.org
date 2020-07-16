@@ -12,7 +12,7 @@ hasChanges() {
 configureGithubRemote() {
   if [ -n "${GH_TOKEN:-}" ]; then
     git remote set-url origin "https://${GH_TOKEN}@github.com/${1}.git"
-    git config user.name "Brian Donovan"
-    git config user.email "1938+eventualbuddha@users.noreply.github.com"
+    git config --global user.name "Brian Donovan"
+    git config --global user.email "1938+eventualbuddha@users.noreply.github.com"
   fi
 }
