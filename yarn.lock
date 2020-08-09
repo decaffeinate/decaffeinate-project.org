@@ -780,7 +780,7 @@ decaffeinate-coffeescript@1.12.7-patch.3:
   version "1.12.7-patch.3"
   resolved "https://registry.npmjs.org/decaffeinate-coffeescript/-/decaffeinate-coffeescript-1.12.7-patch.3.tgz#ae261022a35dc42dd9a0bc2c241717d5a23f8e67"
 
-decaffeinate-parser@^22.5.13:
+decaffeinate-parser@^22.5.14:
   version "22.5.14"
   resolved "https://registry.npmjs.org/decaffeinate-parser/-/decaffeinate-parser-22.5.14.tgz#e5344ecd7a5c61292d2312a76c856171802cadce"
   integrity sha512-LZZjrRvoPGgdyedIzy/0GbvFFI1wi9KAkahgIK7TAAIN67LtAvRvwgdwpkhLZNUgH/ly87zV1GTMBflTNTxbEA==
@@ -792,10 +792,10 @@ decaffeinate-parser@^22.5.13:
     decaffeinate-coffeescript2 "2.2.1-patch.5"
     lines-and-columns "^1.1.6"
 
-decaffeinate@6.1.0:
-  version "6.1.0"
-  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-6.1.0.tgz#3ebec787af84f024b5cfd97488436bb9eab83e9e"
-  integrity sha512-dMfITmVe7nZIZY2ukEQrVOoN87LF7bAOhUCry0KWmEhgGWHWN2VYS0yPVxc2y0GVdwrvXaEoR55tE0723r+NxQ==
+decaffeinate@6.1.3:
+  version "6.1.3"
+  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-6.1.3.tgz#42e0ffd37c34bc580e447b5ddbedfe0a44e21758"
+  integrity sha512-gKebxJlZUZETCcdQygiSFaQ2qn7rUU9XHPLCQEhBWiI8zgERtzi5V43cTZLAmp8yR1XKagw2LD46JtRH9L8APQ==
   dependencies:
     "@codemod/core" "^1.0.7"
     "@codemod/parser" "^1.0.7"
@@ -811,12 +811,12 @@ decaffeinate@6.1.0:
     coffee-lex "^9.1.5"
     decaffeinate-coffeescript "1.12.7-patch.3"
     decaffeinate-coffeescript2 "2.2.1-patch.5"
-    decaffeinate-parser "^22.5.13"
+    decaffeinate-parser "^22.5.14"
     detect-indent "^4.0.0"
     lines-and-columns "^1.1.6"
-    magic-string "^0.25.1"
+    magic-string "^0.25.7"
     mz "^2.7.0"
-    tslib "^2.0.0"
+    tslib "^2.0.1"
 
 defined@^1.0.0:
   version "1.0.0"
@@ -1097,17 +1097,17 @@ lodash@^4.17.10, lodash@^4.17.13:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
   integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
-magic-string@^0.25.1:
-  version "0.25.7"
-  resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.25.7.tgz#3f497d6fd34c669c6798dcb821f2ef31f5445051"
-  integrity sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==
-  dependencies:
-    sourcemap-codec "^1.4.4"
-
 magic-string@^0.25.3:
   version "0.25.3"
   resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.25.3.tgz#34b8d2a2c7fec9d9bdf9929a3fd81d271ef35be9"
   integrity sha512-6QK0OpF/phMz0Q2AxILkX2mFhi7m+WMwTRg0LQKq/WBB0cDP4rYH3Wp4/d3OTXlrPLVJT/RFqj8tFeAR4nk8AA==
+  dependencies:
+    sourcemap-codec "^1.4.4"
+
+magic-string@^0.25.7:
+  version "0.25.7"
+  resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.25.7.tgz#3f497d6fd34c669c6798dcb821f2ef31f5445051"
+  integrity sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==
   dependencies:
     sourcemap-codec "^1.4.4"
 
@@ -1517,7 +1517,7 @@ to-fast-properties@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
 
-tslib@^2.0.0:
+tslib@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.0.1.tgz#410eb0d113e5b6356490eec749603725b021b43e"
   integrity sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ==
