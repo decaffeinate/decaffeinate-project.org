@@ -790,10 +790,10 @@ decaffeinate-parser@^22.5.14:
     decaffeinate-coffeescript2 "2.2.1-patch.5"
     lines-and-columns "^1.1.6"
 
-decaffeinate@6.1.3:
-  version "6.1.3"
-  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-6.1.3.tgz#42e0ffd37c34bc580e447b5ddbedfe0a44e21758"
-  integrity sha512-gKebxJlZUZETCcdQygiSFaQ2qn7rUU9XHPLCQEhBWiI8zgERtzi5V43cTZLAmp8yR1XKagw2LD46JtRH9L8APQ==
+decaffeinate@6.1.4:
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/decaffeinate/-/decaffeinate-6.1.4.tgz#67a104f0f663471d97b7d80c12aac9bb46caad9d"
+  integrity sha512-rFe/BAvJRnRTHSi+nKQwwJ0ZHzV7ofS9aXbj7WdqrbVcFkvrFN7XduYZBaHHXe3cj7jX7RAUCoiB81Y9JfYyrA==
   dependencies:
     "@codemod/core" "^1.0.7"
     "@codemod/parser" "^1.0.7"
@@ -1209,14 +1209,7 @@ lodash@^4.17.10, lodash@^4.17.13:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
   integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
-magic-string@^0.25.3:
-  version "0.25.3"
-  resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.25.3.tgz#34b8d2a2c7fec9d9bdf9929a3fd81d271ef35be9"
-  integrity sha512-6QK0OpF/phMz0Q2AxILkX2mFhi7m+WMwTRg0LQKq/WBB0cDP4rYH3Wp4/d3OTXlrPLVJT/RFqj8tFeAR4nk8AA==
-  dependencies:
-    sourcemap-codec "^1.4.4"
-
-magic-string@^0.25.7:
+magic-string@^0.25.3, magic-string@^0.25.7:
   version "0.25.7"
   resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.25.7.tgz#3f497d6fd34c669c6798dcb821f2ef31f5445051"
   integrity sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==
