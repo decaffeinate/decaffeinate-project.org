@@ -195,7 +195,7 @@
   version "7.1.6"
   resolved "https://registry.npmjs.com/@babel/parser/-/parser-7.1.6.tgz#16e97aca1ec1062324a01c5a6a7d0df8dd189854"
 
-"@babel/parser@^7.10.4", "@babel/parser@^7.9.0":
+"@babel/parser@^7.10.4":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.10.4.tgz#9eedf27e1998d87739fb5028a5120557c06a1a64"
   integrity sha512-8jHII4hf+YVDsskTF6WuMB3X4Eh+PsUkC2ljq22so5rHvH+T8BzyL94VOdyFLNR8tBSVXOTbNHOKpR4TfRxVtA==
@@ -312,14 +312,7 @@
     recast "^0.19.0"
     resolve "^1.12.0"
 
-"@codemod/parser@^1.0.3", "@codemod/parser@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@codemod/parser/-/parser-1.0.7.tgz#00e69a53c88c8dc1f8b2f6b75346485cdd4a5f87"
-  integrity sha512-GSrc8CvwDN24GluYQ7xDBMMQo5mFJO6cs2/jZssfDjOalRKKKb9UqvkNYFuYXXm4buRAF23Soih9bpPhcDxA/g==
-  dependencies:
-    "@babel/parser" "^7.9.0"
-
-"@codemod/parser@^1.1.0":
+"@codemod/parser@^1.0.3", "@codemod/parser@^1.0.7", "@codemod/parser@^1.1.0":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@codemod/parser/-/parser-1.1.0.tgz#8a8f0bf2f261082cf5b8a39cfafe3d15e2454da6"
   integrity sha512-MR2oYTZRobGBFTMzo+NmwzgXUT3VgihaLJroZHA34XaF+Nqnw3rqU/Jf08jI/bctVtyZ0FTosZCRz6OKVbttAw==
@@ -811,10 +804,10 @@ decaffeinate-parser@^22.5.14:
     decaffeinate-coffeescript2 "2.2.1-patch.5"
     lines-and-columns "^1.1.6"
 
-decaffeinate@6.1.5:
-  version "6.1.5"
-  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-6.1.5.tgz#3987733f7929684021dd71dc56f07f41362c113d"
-  integrity sha512-rRCSfBPB2PsAo7MM5JeOnKJ41IixP7Fozf9KQmqG5V1+J0eLs+8pNeJyNh+jfDr74I/xR1aeCITyrgBZ0th4vw==
+decaffeinate@6.1.6:
+  version "6.1.6"
+  resolved "https://registry.yarnpkg.com/decaffeinate/-/decaffeinate-6.1.6.tgz#e24f87ccd8b48cb36b7704feaeb44202b044d483"
+  integrity sha512-NnitEJtidpbVJ4bAa0twHmXtairsd305BAHGGAuiLsv4Z7wmL81oyAYOrv4mEsSIqNebOI4sYFuDixH5MiLTzw==
   dependencies:
     "@codemod/core" "^1.1.0"
     "@codemod/parser" "^1.1.0"
@@ -1235,14 +1228,7 @@ lodash@^4.17.19:
   resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
-magic-string@^0.25.3:
-  version "0.25.3"
-  resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.25.3.tgz#34b8d2a2c7fec9d9bdf9929a3fd81d271ef35be9"
-  integrity sha512-6QK0OpF/phMz0Q2AxILkX2mFhi7m+WMwTRg0LQKq/WBB0cDP4rYH3Wp4/d3OTXlrPLVJT/RFqj8tFeAR4nk8AA==
-  dependencies:
-    sourcemap-codec "^1.4.4"
-
-magic-string@^0.25.7:
+magic-string@^0.25.3, magic-string@^0.25.7:
   version "0.25.7"
   resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.25.7.tgz#3f497d6fd34c669c6798dcb821f2ef31f5445051"
   integrity sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==
