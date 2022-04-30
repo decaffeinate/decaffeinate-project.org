@@ -812,10 +812,10 @@ decaffeinate-parser@^22.5.15:
     decaffeinate-coffeescript2 "2.2.1-patch.5"
     lines-and-columns "^1.1.6"
 
-decaffeinate@6.1.10:
-  version "6.1.10"
-  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-6.1.10.tgz#1f733115d98b48cf8db1b3dde70ac4d1ac3fb1e9"
-  integrity sha512-t4DgQFO0cyGhGJiZMA+K2kTZ38Emj8ecD/ebiKeN0NP4kbSLZHLXeF/fzLn8uAwtwmIE7M1pEg91+nPk4IzJMA==
+decaffeinate@6.1.11:
+  version "6.1.11"
+  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-6.1.11.tgz#ef07df034e028ab11ee49dcefafd8da9422f6f9a"
+  integrity sha512-51p7lXIxTYlLPg4EL88gf8gjgjPN2S+ueKcnNiync3cMVn5hB/0qoC/M90Mt2bpiZONp6JwSWMKOwQS76bO+3w==
   dependencies:
     "@codemod/core" "^1.1.0"
     "@codemod/parser" "^1.1.0"
