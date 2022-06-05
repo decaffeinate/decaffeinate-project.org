@@ -504,10 +504,10 @@ ast-types@0.13.3:
   resolved "https://registry.yarnpkg.com/ast-types/-/ast-types-0.13.3.tgz#50da3f28d17bdbc7969a3a2d83a0e4a72ae755a7"
   integrity sha512-XTZ7xGML849LkQP86sWdQzfhwbt3YwIO6MqbX9mUNYY98VKaaVZP7YNNm70IpwecbkkxmfC5IYAzOQ/2p29zRA==
 
-automatic-semicolon-insertion@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/automatic-semicolon-insertion/-/automatic-semicolon-insertion-3.0.0.tgz#3176a0947231ce32e6df6a9b3d2aac1cb8d33c1f"
-  integrity sha512-SqLDJ45I4vK4cboFuaksCnI+c3D7HBLcChXmFfgxUwUDgHz/k+k5Z0V7lBWb55hIpvNcRQ9M61YNZUx5qNDgSA==
+automatic-semicolon-insertion@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/automatic-semicolon-insertion/-/automatic-semicolon-insertion-3.0.2.tgz#3ea2cbfb4c3337696ec18dd7824955baa6a13a22"
+  integrity sha512-UMJH1FWsV/FFHGgcLy09BBss1yZj3mNz/bwNCZ164hlt6SyBL/cwMqbkzmJfnLpFhFm64A+sAfkW2lb/vcf7oA==
   dependencies:
     "@babel/traverse" "^7.18.2"
     "@babel/types" "^7.18.4"
@@ -880,10 +880,10 @@ decaffeinate-parser@^22.5.15:
     decaffeinate-coffeescript2 "2.2.1-patch.5"
     lines-and-columns "^1.1.6"
 
-decaffeinate@7.1.1:
-  version "7.1.1"
-  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-7.1.1.tgz#f35bf37914fb00fa938c08008c0a370ce93337f1"
-  integrity sha512-hDk2ohPfYvFuUP9s7ZSePNjWGopkYj9ZuvX438n1MP4+z7a6lZ8CtR9uRqikG8FLl8jzTXmQ/NMMjm0YqUxt5g==
+decaffeinate@7.1.2:
+  version "7.1.2"
+  resolved "https://registry.npmjs.org/decaffeinate/-/decaffeinate-7.1.2.tgz#64081b2b2358ead043f110e44a3c26c57f16542f"
+  integrity sha512-ajhpMEzNT+Fr2HCNHJ5bjoTxyioew7a+Q+ZvKOpY3a5i+28oWFHNyxQq78tR7hYELk7h9S/llHz1b+coD+4zNQ==
   dependencies:
     "@codemod/core" "^2.0.1"
     "@codemod/parser" "^1.2.1"
@@ -895,7 +895,7 @@ decaffeinate@7.1.1:
     "@resugar/codemod-objects-shorthand" "^1.0.1"
     "@resugar/codemod-strings-template" "^1.0.1"
     add-variable-declarations "^4.0.7"
-    automatic-semicolon-insertion "^3.0.0"
+    automatic-semicolon-insertion "^3.0.2"
     coffee-lex "^9.1.5"
     decaffeinate-coffeescript "1.12.7-patch.3"
     decaffeinate-coffeescript2 "2.2.1-patch.5"
