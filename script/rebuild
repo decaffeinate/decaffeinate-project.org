@@ -54,7 +54,7 @@ if hasChanges; then
 
     if [ "${DEPLOY}" == true ]; then
       echo "Pushing to origin…"
-      git push -f origin HEAD:master
+      git push -f origin HEAD:main
     fi
   else
     echo "Not committing changes since --no-commit was given."
