@@ -38,6 +38,14 @@ browserify \
 # Update the script & version.
 perl -p -i -e "s/v\d+\.\d+\.\d+/v${VERSION}/" repl/index.html
 
+if ! git config user.name > /dev/null; then
+  git config user.name "Decaffeinate CI"
+fi
+
+if ! git config user.email > /dev/null; then
+  git config user.email "1938+eventualbuddha@users.noreply.github.com"
+fi
+
 if hasChanges; then
   if [ ${COMMIT} == true ]; then
     echo "Committing changes for ${VERSION}…"
