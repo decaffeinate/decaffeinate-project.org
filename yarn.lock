@@ -742,10 +742,10 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-coffee-lex@^9.2.1:
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/coffee-lex/-/coffee-lex-9.3.0.tgz#57b3432731246d454d47e4822dc5903b2ecca544"
-  integrity sha512-hKE3tJWCqAOdYekp3iWYl6twZjGz3KLhK42wKLi5OVRLWy35QPi24TvNX1ZEaU+ZeiRkyLcoTbE3elJO/TL4kw==
+coffee-lex@^9.3.1:
+  version "9.3.1"
+  resolved "https://registry.yarnpkg.com/coffee-lex/-/coffee-lex-9.3.1.tgz#dc68ef9f73b26d8b389119339dd81a9433b604f1"
+  integrity sha512-5KRL4RDU1PcQDQ7CEKNymqfvqhTOdZWWsMoisPNLv2bMErauKoBiqpZRpdapxQavWusffbTGVeaas1M3CzVCsQ==
 
 color-convert@^1.9.0:
   version "1.9.1"
@@ -872,40 +872,32 @@ debug@^4.1.0:
   dependencies:
     ms "^2.1.1"
 
-decaffeinate-coffeescript2@2.2.1-patch.5:
-  version "2.2.1-patch.5"
-  resolved "https://registry.npmjs.org/decaffeinate-coffeescript2/-/decaffeinate-coffeescript2-2.2.1-patch.5.tgz#016ff1e967812d42bbfe270faa63b77681d2d7df"
-
-decaffeinate-coffeescript2@^2.2.1-patch.6:
+decaffeinate-coffeescript2@2.2.1-patch.6, decaffeinate-coffeescript2@^2.2.1-patch.6:
   version "2.2.1-patch.6"
   resolved "https://registry.yarnpkg.com/decaffeinate-coffeescript2/-/decaffeinate-coffeescript2-2.2.1-patch.6.tgz#4266f1eaa6762aa8172c04e54ae374ba96f09769"
   integrity sha512-R9QhWXDmRGs/uSPliv5n3FALNQwHYlkf6lhP5ZZ0QQ8NqZZJNfqLuiiSwe2t2/o6hHmIEkRSfQL/Ex1SEhSAHg==
 
-decaffeinate-coffeescript@1.12.7-patch.3:
-  version "1.12.7-patch.3"
-  resolved "https://registry.npmjs.org/decaffeinate-coffeescript/-/decaffeinate-coffeescript-1.12.7-patch.3.tgz#ae261022a35dc42dd9a0bc2c241717d5a23f8e67"
-
-decaffeinate-coffeescript@^1.12.7-patch.4:
+decaffeinate-coffeescript@1.12.7-patch.4, decaffeinate-coffeescript@^1.12.7-patch.4:
   version "1.12.7-patch.4"
   resolved "https://registry.yarnpkg.com/decaffeinate-coffeescript/-/decaffeinate-coffeescript-1.12.7-patch.4.tgz#47e958446b540f314c6ff2a550678a19aca8273a"
   integrity sha512-VLVyuAahCJMskqpbgcyg7MrxIVeooPDWoU8atvotH+OgLdIIJlKzFFHZoJCTaMdSxqtbCkli7dFzCeqnTixp5Q==
 
-decaffeinate-parser@^23.0.0:
-  version "23.0.0"
-  resolved "https://registry.yarnpkg.com/decaffeinate-parser/-/decaffeinate-parser-23.0.0.tgz#940fba5dd7c547bbf157022bb479f258986fe17a"
-  integrity sha512-tKABjayntt/sAtfbeRowUhDOl39xe19ixsAY1EJ0OuLBB5WkUiNHKRk7c3pw9zDRRdysSIOJ1f3gALUMFfXQRw==
+decaffeinate-parser@^23.0.1:
+  version "23.0.1"
+  resolved "https://registry.yarnpkg.com/decaffeinate-parser/-/decaffeinate-parser-23.0.1.tgz#e896f71f668db0b1eb50f011ec7997b652268ef8"
+  integrity sha512-H0fuEdP2GWDhFIg4Ejlx2Loz6/yqEvWR3i2+mU8TNJkkJ9txd/4TEIdLcdMmBd9vw3eeBs0HHH+Yj8QbRO5aZQ==
   dependencies:
     "@babel/types" "^7.18.4"
     "@codemod/parser" "^1.2.1"
-    coffee-lex "^9.2.1"
+    coffee-lex "^9.3.1"
     decaffeinate-coffeescript "^1.12.7-patch.4"
     decaffeinate-coffeescript2 "^2.2.1-patch.6"
     lines-and-columns "^2.0.3"
 
-decaffeinate@8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/decaffeinate/-/decaffeinate-8.0.0.tgz#3acd915d73fd38c0e7778d4dd8091e7a588f81f6"
-  integrity sha512-5cfkATkQkeTigcDg6ckTT/eSmHvCKVzsK9LCWYIpuMubA7w8oajtezYApjsEfdt/2VuLu66fEqDeVZqu4YSWfg==
+decaffeinate@8.0.3:
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/decaffeinate/-/decaffeinate-8.0.3.tgz#d6c4eee71e382757eae738aca6327161e5423d17"
+  integrity sha512-mJMB2MAlkNoZy6bTInFKTqw1GV6/d6NCdbREyF3YMt2Wmznw/Obgv097ca0/bb6MKGXDSLURt3AsDklzCeC6Iw==
   dependencies:
     "@babel/types" "^7.12.6"
     "@codemod/core" "^2.0.1"
@@ -919,10 +911,10 @@ decaffeinate@8.0.0:
     "@resugar/codemod-strings-template" "^1.0.1"
     add-variable-declarations "^4.0.7"
     automatic-semicolon-insertion "^3.0.2"
-    coffee-lex "^9.2.1"
-    decaffeinate-coffeescript "1.12.7-patch.3"
-    decaffeinate-coffeescript2 "2.2.1-patch.5"
-    decaffeinate-parser "^23.0.0"
+    coffee-lex "^9.3.1"
+    decaffeinate-coffeescript "1.12.7-patch.4"
+    decaffeinate-coffeescript2 "2.2.1-patch.6"
+    decaffeinate-parser "^23.0.1"
     detect-indent "^4.0.0"
     is-ci-cli "^2.2.0"
     lines-and-columns "^2.0.3"
