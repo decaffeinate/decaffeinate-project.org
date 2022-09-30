@@ -21,7 +21,7 @@
   "homepage": "https://decaffeinate-project.org/",
   "devDependencies": {
     "browserify": "^17.0.0",
-    "decaffeinate": "8.1.2"
+    "decaffeinate": "8.1.3"
   },
   "resolutions": {
     "assert": "^2.0.0"
